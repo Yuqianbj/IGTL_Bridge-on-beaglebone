@@ -23,15 +23,18 @@ the result should be like the code in the test.txt in my repository.
 4.1 If you just want to use the led to show you if ROS receives a pointdata from 3D Slicer then just follow the steps on https://github.com/openigtlink/ROS-IGTL-Bridge, what you should do is:   
       
 copy led.py to ROS-IGTL-Bridge/testing      
-`
+`    
 root@arm:~# cd ~/catkin_ws/src        
- ``
+ `    
+ `    
 root@arm:~/catkin_ws# catkin_make
-``
+`    
+`    
 root@arm:~/catkin_ws# source devel/setup.bash
-``
+`    
+`    
 root@arm:~/catkin_ws# roslaunch ros_igtl_bridge test.launch        
-`     
+`         
 Now you can run your 3D Slicer after connecting them try to send some point data and check the voltage change of P9_12 PIN on beaglebone.   
      
 4.2 If you want to output an analog voltage based on the location of the pointdata sent from 3D Slicer, then you need to download pwm.py.
@@ -57,8 +60,14 @@ it should be like this:
  If you finish all these then you can go to next step:   
 `
 root@arm:~# cd ~/catkin_ws/src    
+`  
+`   
 root@arm:~/catkin_ws# catkin_make
+`   
+`   
 root@arm:~/catkin_ws# source devel/setup.bash     
-root@arm:~/catkin_ws# roslaunch ros_igtl_bridge test.launch     
 `
+`   
+root@arm:~/catkin_ws# roslaunch ros_igtl_bridge test.launch     
+`    
 Now you can use a voltmeter to test the voltage of P9.14 on your beaglebone, it should be same as the x value of pointdata devided by 10.    
