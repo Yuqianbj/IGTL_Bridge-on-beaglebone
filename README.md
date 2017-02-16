@@ -1,7 +1,7 @@
-# ROS_IGTL_Bridge-Led
+# IGTL_Bridge-on-beaglebone
 This repository should be used with ROS-IGTL-Bridge(A bridge that can connect 3D Slicer with ROS, https://github.com/openigtlink/ROS-IGTL-Bridge)
 on beaglebone black.    
-The main function of this python codes is 
+The main function of this python codes is using the data from 3D Slicer to control PIN of beaglebone.   
 
 ##Instruction   
 This instruction tells you how to use this code and how to set up your beaglebone black.   
