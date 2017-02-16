@@ -67,7 +67,7 @@ root@arm:~/catkin_ws# catkin_make
 `   
 root@arm:~/catkin_ws# source devel/setup.bash     
 `
-`   
+`      
 root@arm:~/catkin_ws# roslaunch ros_igtl_bridge test.launch     
-`    
+`       
 Now you can use a voltmeter to test the voltage of P9.14 on your beaglebone, it should be same as the x value of pointdata devided by 10.    
