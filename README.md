@@ -34,8 +34,10 @@ Now you can run your 3D Slicer after connecting them try to send some point data
 4.2 If you want to output an analog voltage based on the location of the pointdata sent from 3D Slicer, then you need to download pwm.py.
 And copy it to ROS-IGTL-Bridge/testing, and then you need to set your beaglebone device tree and cape manager follow these steps:   
 `
-root@arm:~# echo cape-universaln > /sys/devices/platform/bone_capemgr/slots      
-root@arm:~# echo BB-PWM1 > /sys/devices/platform/bone_capemgr/slots    
+root@arm:~# echo cape-universaln > /sys/devices/platform/bone_capemgr/slots    
+`     
+`
+root@arm:~# echo BB-PWM1 > /sys/devices/platform/bone_capemgr/slots       
 `
 and check your capemanager    
 `
