@@ -18,7 +18,7 @@ add led node launch:
 `     
 <node name="led" pkg="ros_igtl_bridge" type="led.py" output="screen" />      
 `     
-the result should be like the code in the test.txt in my repository.     
+the result should be like the code in the test.txt in my repository. But don't change .launch to .txt 
         
 4.1 If you just want to use the led to show you if ROS receives a pointdata from 3D Slicer then just follow the steps on https://github.com/openigtlink/ROS-IGTL-Bridge, what you should do is:   
       
