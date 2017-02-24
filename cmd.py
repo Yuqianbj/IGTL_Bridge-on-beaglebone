@@ -17,7 +17,8 @@ def main():
     while(1):
 
         Pointmsg.name="received"
-        potVal=ADC.read(analogPin)
+        potVal0=ADC.read(analogPin)
+		potVal=potVal0*1.8
         Pointmsg.pointdata.x=float(potVal)
         Pointmsg.pointdata.y=float(potVal)
         Pointmsg.pointdata.z=float(potVal)
